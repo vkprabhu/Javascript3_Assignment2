@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <table border="1">
+      <tr class="odd">
+        <td>row1</td>
+      </tr>
+      <tr class="even">
+        <td>row2</td>
+      </tr>
+      <tr class="odd">
+        <td>row3</td>
+      </tr>
+      <tr class="even">
+        <td>row4</td>
+      </tr>
+      <tr class="odd">
+        <td>row5</td>
+      </tr>
+    </table>
+
+    <form action="" method="get">
+      <input type="button" value="HideOddRows" onclick="myFunction()"/>
+    </form>
+    <script>
+    function myFunction() {
+      var x = document.getElementsByClassName('odd');
+      for (var val in x) {
+        x[val].style.display = "none";
+      }
+    }
+    </script>
+  </body>
+</html>
